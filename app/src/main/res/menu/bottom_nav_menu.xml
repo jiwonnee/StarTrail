@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Guide Navigation Item -->
+    <item
+        android:id="@+id/navigation_Guide"
+        android:icon="@drawable/baseline_person_24"
+        android:title="Guide"/>
+
+    <!-- Landscape Navigation Item -->
+    <item
+        android:id="@+id/navigation_Landscape"
+        android:icon="@drawable/baseline_landscape_24"
+        android:title="Landscape" />
+
+    <!-- Reviews Navigation Item -->
+    <item
+        android:id="@+id/navigation_Reviews"
+        android:icon="@drawable/baseline_thumb_up_alt_24"
+        android:title="Reviews" />
+</menu>
+    <!--
+        layout 파일명에서
+        home = Guide
+        dashboard = Lanscape
+        notifications = Reiviews
+        -->
