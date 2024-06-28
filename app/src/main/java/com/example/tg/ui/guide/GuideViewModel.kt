@@ -1,4 +1,4 @@
-package com.example.tg.ui.home
+package com.example.tg.ui.guide
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

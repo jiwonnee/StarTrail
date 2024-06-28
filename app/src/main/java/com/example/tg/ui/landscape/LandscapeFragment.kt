@@ -1,4 +1,4 @@
-package com.example.tg.ui.home
+package com.example.tg.ui.landscape
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,11 +7,11 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import com.example.tg.databinding.FragmentGuideBinding
+import com.example.tg.databinding.FragmentLandscapeBinding
 
-class GuideFragment : Fragment() {
+class LandscapeFragment : Fragment() {
 
-    private var _binding: FragmentGuideBinding? = null
+    private var _binding: FragmentLandscapeBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -22,14 +22,14 @@ class GuideFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val homeViewModel =
-            ViewModelProvider(this).get(GuideViewModel::class.java)
+        val dashboardViewModel =
+            ViewModelProvider(this).get(LandscapeViewModel::class.java)
 
-        _binding = FragmentGuideBinding.inflate(inflater, container, false)
+        _binding = FragmentLandscapeBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textHome
-        homeViewModel.text.observe(viewLifecycleOwner) {
+        val textView: TextView = binding.textLandscape
+        dashboardViewModel.text.observe(viewLifecycleOwner) {
             textView.text = it
         }
         return root

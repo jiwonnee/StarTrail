@@ -7,19 +7,19 @@
 
     <fragment
         android:id="@+id/navigation_Guide"
-        android:name="com.example.tg.ui.home.GuideFragment"
+        android:name="com.example.tg.ui.guide.GuideFragment"
         android:label="Guide"
         tools:layout="@layout/fragment_guide" />
 
     <fragment
         android:id="@+id/navigation_Landscape"
-        android:name="com.example.tg.ui.dashboard.LandscapeFragment"
+        android:name="com.example.tg.ui.landscape.LandscapeFragment"
         android:label="Landscape"
         tools:layout="@layout/fragment_landscape" />
 
     <fragment
         android:id="@+id/navigation_Reviews"
-        android:name="com.example.tg.ui.notifications.ReviewsFragment"
+        android:name="com.example.tg.ui.reviews.ReviewsFragment"
         android:label="Reviews"
         tools:layout="@layout/fragment_reviews" />
 </navigation>

@@ -1,4 +1,4 @@
-package com.example.tg.ui.dashboard
+package com.example.tg.ui.landscape
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

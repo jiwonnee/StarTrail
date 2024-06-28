@@ -1,4 +1,4 @@
-package com.example.tg.ui.notifications
+package com.example.tg.ui.reviews
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
