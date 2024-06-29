@@ -16,6 +16,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+        supportActionBar?.hide() // 상단바 제거
+
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
@@ -24,12 +26,12 @@ class MainActivity : AppCompatActivity() {
         val navController = findNavController(R.id.nav_host_fragment_activity_main)
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
-        val appBarConfiguration = AppBarConfiguration(
-            setOf(
-                R.id.navigation_Guide, R.id.navigation_Landscape, R.id.navigation_Reviews
+            val appBarConfiguration = AppBarConfiguration(
+                setOf(
+                    R.id.navigation_Guide, R.id.navigation_Landscape, R.id.navigation_Reviews
+                )
             )
-        )
-        setupActionBarWithNavController(navController, appBarConfiguration)
+            setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
     }
 }
