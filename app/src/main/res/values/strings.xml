@@ -3,4 +3,19 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+
+    <string-array name="cities">
+        <item>Seoul</item>
+        <item>NewYork</item>
+        <item>Tokyo</item>
+        <item>Paris</item>
+        <item>London</item>
+    </string-array>
+
+    <string-array name="seoul_categories">
+        <item>Category1</item>
+        <item>Category2</item>
+        <item>Category3</item>
+    </string-array>
+    <!-- 각 도시의 카테고리 배열을 추가 -->
 </resources>
