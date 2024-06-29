@@ -33,7 +33,7 @@ class GuideViewModel(application: Application) : AndroidViewModel(application) {
     private fun loadContacts() {
         viewModelScope.launch(Dispatchers.IO) {
             val assetManager = getApplication<Application>().assets
-            val inputStream = assetManager.open("contacts.json")
+            val inputStream = assetManager.open("main-assets-json/contacts.json")
             val bufferedReader = BufferedReader(InputStreamReader(inputStream))
             val jsonString = bufferedReader.use { it.readText() }
             val jsonArray = JSONArray(jsonString)

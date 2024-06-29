@@ -12,6 +12,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.tg.databinding.FragmentGuideBinding
+import com.example.tg.R
 
 class GuideFragment : Fragment() {
 
@@ -50,13 +51,15 @@ class GuideFragment : Fragment() {
         RecyclerView.Adapter<ContactAdapter.ContactViewHolder>() {
 
         inner class ContactViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-            val name: TextView = view.findViewById(android.R.id.text1)
-            val phone: TextView = view.findViewById(android.R.id.text2)
+            val name: TextView = view.findViewById(R.id.text_name)
+            val phone: TextView = view.findViewById(R.id.text_phone)
+            val email: TextView = view.findViewById(R.id.text_email)
+            val location: TextView = view.findViewById(R.id.text_location)
         }
 
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ContactViewHolder {
             val view = LayoutInflater.from(parent.context)
-                .inflate(android.R.layout.simple_list_item_2, parent, false)
+                .inflate(R.layout.item_contact, parent, false)
             return ContactViewHolder(view)
         }
 
@@ -64,6 +67,8 @@ class GuideFragment : Fragment() {
             val contact = contacts[position]
             holder.name.text = contact.name
             holder.phone.text = contact.phone
+            holder.email.text = contact.email
+            holder.location.text = contact.location
         }
 
         override fun getItemCount(): Int {
@@ -71,8 +76,17 @@ class GuideFragment : Fragment() {
         }
 
         fun updateContacts(newContacts: List<Contact>) {
+            val oldSize = contacts.size
             contacts = newContacts
-            notifyDataSetChanged()
+
+            if (oldSize < contacts.size) { // 새로운 항목이 추가
+                notifyItemRangeInserted(oldSize, contacts.size - oldSize)
+            } else if (oldSize > contacts.size) { // 항목이 제거
+                notifyItemRangeRemoved(contacts.size, oldSize - contacts.size)
+            } else { // 항목이 변경
+                notifyItemRangeChanged(0, contacts.size)
+            }
         }
+
     }
 }
