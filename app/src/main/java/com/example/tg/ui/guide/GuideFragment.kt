@@ -45,7 +45,7 @@ class GuideFragment : Fragment() {
         return root
     }
 
-    override fun onDestroyView() {
+override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
     }
@@ -74,12 +74,20 @@ class GuideFragment : Fragment() {
             holder.email.text = contact.email
             holder.location.text = contact.location
 
+            // 기본 이미지 설정
+            holder.profile.setImageResource(R.drawable.user_image)
+
+            // 상세 이미지 리소스 ID 설정
+            val context = holder.profile.context
+            val imageResId = context.resources.getIdentifier(contact.imageName, "drawable", context.packageName)
+
             holder.profile.setOnClickListener {
                 val intent = Intent(context, ProfileDetailActivity::class.java).apply {
                     putExtra("name", contact.name)
                     putExtra("phone", contact.phone)
                     putExtra("email", contact.email)
                     putExtra("location", contact.location)
+                    putExtra("imageResId", imageResId)
                 }
                 startActivity(intent)
             }

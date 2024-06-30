@@ -5,6 +5,15 @@
     android:orientation="vertical"
     android:padding="16dp">
 
+    <!--프로필 이미지-->
+    <ImageView
+        android:id="@+id/profileImage"
+        android:layout_width="500dp"
+        android:layout_height="500dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/user_image"/>
+
     <!--프로필 정보-->
     <TextView
         android:id="@+id/text_name"

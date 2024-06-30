@@ -18,7 +18,8 @@ data class Contact(
     val name: String,
     val phone: String,
     val email: String,
-    val location: String
+    val location: String,
+    val imageName: String
 )
 
 class GuideViewModel(application: Application) : AndroidViewModel(application) {
@@ -45,7 +46,8 @@ class GuideViewModel(application: Application) : AndroidViewModel(application) {
                     name = jsonObject.getString("name"),
                     phone = jsonObject.getString("phone"),
                     email = jsonObject.getString("email"),
-                    location = jsonObject.getString("location")
+                    location = jsonObject.getString("location"),
+                    imageName = jsonObject.getString("image")
                 )
                 contactList.add(contact)
             }
