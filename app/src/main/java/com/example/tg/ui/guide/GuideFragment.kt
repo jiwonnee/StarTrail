@@ -88,6 +88,8 @@ override fun onDestroyView() {
                     putExtra("email", contact.email)
                     putExtra("location", contact.location)
                     putExtra("imageResId", imageResId)
+                    putExtra("introduction", contact.introduction)
+                    putExtra("instagramUrl", contact.instagramUrl)
                 }
                 startActivity(intent)
             }

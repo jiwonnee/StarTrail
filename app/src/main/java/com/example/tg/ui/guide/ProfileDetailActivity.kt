@@ -4,7 +4,8 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.tg.databinding.ActivityProfileDetailBinding
 import com.example.tg.R
-
+import android.content.Intent
+import android.net.Uri
 
 class ProfileDetailActivity : AppCompatActivity() {
 
@@ -20,11 +21,20 @@ class ProfileDetailActivity : AppCompatActivity() {
         val email = intent.getStringExtra("email")
         val location = intent.getStringExtra("location")
         val imageResId = intent.getIntExtra("imageResId", R.drawable.user_image)
+        val introduction = intent.getStringExtra("introduction")
+        val instagramUrl = intent.getStringExtra("instagramUrl")
 
         binding.textName.text = name
         binding.textPhone.text = phone
         binding.textEmail.text = email
         binding.textLocation.text = location
         binding.profileImage.setImageResource(imageResId)
+        binding.textIntroduction.text = introduction
+
+        binding.instagramLogo.setOnClickListener {
+            val intent = Intent(Intent.ACTION_VIEW, Uri.parse(instagramUrl))
+            startActivity(intent)
+        }
+
     }
 }

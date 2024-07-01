@@ -23,11 +23,13 @@ class GuideRankingAdapter(private val guides: List<Guide>) :
         holder.nameTextView.text = guide.name
         holder.descriptionTextView.text = guide.description
         setStarRating(holder.starContainer, guide.rating)
+        setRankImage(holder.rankImageView, position + 1)
     }
 
     override fun getItemCount(): Int = guides.size
 
     class GuideViewHolder(view: View) : RecyclerView.ViewHolder(view) {
+        val rankImageView: ImageView = view.findViewById(R.id.rankImageView)
         val nameTextView: TextView = view.findViewById(R.id.nameTextView)
         val descriptionTextView: TextView = view.findViewById(R.id.descriptionTextView)
         val starContainer: ViewGroup = view.findViewById(R.id.starContainer)
@@ -49,4 +51,19 @@ class GuideRankingAdapter(private val guides: List<Guide>) :
             starContainer.addView(starImageView)
         }
     }
+
+    private fun setRankImage(imageView: ImageView, rank: Int) {
+        val imageResId = when (rank) {
+            1 -> R.drawable.ranking_1
+            2 -> R.drawable.ranking_2
+            3 -> R.drawable.ranking_3
+            else -> {
+                imageView.visibility = View.GONE  // 조건이 맞지 않으면 뷰를 사라지게 함
+                return
+            }
+        }
+        imageView.setImageResource(imageResId)
+        imageView.visibility = View.VISIBLE  // 이미지가 있을 때만 보이도록 설정
+    }
 }
+
