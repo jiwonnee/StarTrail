@@ -1,12 +1,15 @@
 package com.example.tg.ui.landscape
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.commit
 import coil.load
 import coil.request.CachePolicy
+import com.example.tg.R
 import com.example.tg.databinding.FragmentImageBinding
 
 class ImageFragment : Fragment() {
@@ -30,7 +33,11 @@ class ImageFragment : Fragment() {
         }
 
         binding.imageView.setOnClickListener {
-            // 클릭 시 정보를 보여주는 로직 추가
+            val intent = Intent(context, ImageInfoActivity::class.java).apply {
+                putExtra(ImageInfoActivity.ARG_IMAGE, imageUrl)
+                putExtra(ImageInfoActivity.ARG_TITLE, fileName)
+            }
+            startActivity(intent)
         }
         return binding.root
     }

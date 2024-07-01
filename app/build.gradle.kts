@@ -36,6 +36,9 @@ android {
     buildFeatures {
         viewBinding = true
     }
+    buildFeatures {
+        dataBinding = true
+    }
 }
 
 dependencies {
@@ -59,4 +62,7 @@ dependencies {
     implementation("androidx.compose.ui:ui-tooling-preview:1.6.8")
     implementation("androidx.activity:activity-compose:1.9.0")
     implementation("androidx.compose.runtime:runtime-livedata:1.6.8")
+    implementation("androidx.databinding:databinding-runtime:7.0.2")
+    implementation("androidx.cardview:cardview:1.0.0")
+
 }
