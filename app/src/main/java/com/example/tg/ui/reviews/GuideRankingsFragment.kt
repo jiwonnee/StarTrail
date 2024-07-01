@@ -37,6 +37,7 @@ class GuideRankingsFragment : Fragment() {
 
         // SearchView 설정
         val searchView: SearchView = binding.searchView
+        searchView.setQueryHint("Search for a name or hashtag")
         searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
             override fun onQueryTextSubmit(query: String?): Boolean {
                 return false

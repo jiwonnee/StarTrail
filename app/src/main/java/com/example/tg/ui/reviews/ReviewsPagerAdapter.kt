@@ -10,11 +10,6 @@ class ReviewsPagerAdapter(fragment: Fragment) : FragmentStateAdapter(fragment) {
     }
 
     override fun createFragment(position: Int): Fragment {
-//        return when (position) {
-//            0 -> GuideRankingsFragment()
-//            1 -> PlaceRankingsFragment()
-//            else -> throw IllegalStateException("Unexpected position $position")
-//        }
         return GuideRankingsFragment()
     }
 }

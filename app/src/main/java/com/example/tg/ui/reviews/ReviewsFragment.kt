@@ -25,25 +25,9 @@ class ReviewsFragment : Fragment() {
         val viewPager = binding.viewPager
 
 
-        // ViewPager2 어댑터 설정 - 0번 인덱스(Guide Rankings)만 표시
+        // ViewPager2 어댑터 설정
         val adapter = ReviewsPagerAdapter(this)
         viewPager.adapter = adapter
-
-//        val tabLayout = binding.tabLayout
-//
-//        // ViewPager2 어댑터 설정
-//        val adapter = ReviewsPagerAdapter(this)
-//        viewPager.adapter = adapter
-//
-//        // TabLayout과 ViewPager2를 연결
-//        TabLayoutMediator(tabLayout, viewPager) { tab, position ->
-//            tab.text = when (position) {
-//                0 -> "Guide Rankings"
-//                1 -> "Place Rankings"
-//                else -> null
-//            }
-//        }.attach()
-
         return root
     }
 
