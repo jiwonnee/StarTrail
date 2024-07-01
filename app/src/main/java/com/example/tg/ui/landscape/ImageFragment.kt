@@ -5,12 +5,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.viewpager2.widget.ViewPager2
 import coil.load
 import coil.request.CachePolicy
 import com.example.tg.databinding.FragmentImageBinding
-import com.example.tg.databinding.FragmentLandscapeBinding
-import com.google.android.material.tabs.TabLayout
 
 class ImageFragment : Fragment() {
     private var _binding: FragmentImageBinding? = null
@@ -22,6 +19,10 @@ class ImageFragment : Fragment() {
     ): View? {
         _binding = FragmentImageBinding.inflate(inflater, container, false)
         val imageUrl = arguments?.getString(ARG_IMAGE)
+
+        // 파일 이름에서 확장자를 제거한 후 설정
+        val fileName = imageUrl?.substringAfterLast('/')?.substringBeforeLast('.')
+        binding.imageTitle.text = fileName
 
         binding.imageView.load("file:///android_asset/$imageUrl") {
             crossfade(true)
