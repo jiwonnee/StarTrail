@@ -45,7 +45,7 @@ class GuideFragment : Fragment() {
         return root
     }
 
-override fun onDestroyView() {
+    override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
     }
@@ -81,7 +81,7 @@ override fun onDestroyView() {
             val context = holder.profile.context
             val imageResId = context.resources.getIdentifier(contact.imageName, "drawable", context.packageName)
 
-            holder.profile.setOnClickListener {
+            holder.itemView.setOnClickListener {
                 val intent = Intent(context, ProfileDetailActivity::class.java).apply {
                     putExtra("name", contact.name)
                     putExtra("phone", contact.phone)
