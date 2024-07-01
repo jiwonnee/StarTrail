@@ -1,6 +1,3 @@
-//JSON 파일을 파싱하고 데이터를 관리하는 역할
-//ViewModel은 데이터를 로드하고, LiveData를 통해 Fragment에 데이터를 전달
-
 package com.example.tg.ui.guide
 
 import android.app.Application

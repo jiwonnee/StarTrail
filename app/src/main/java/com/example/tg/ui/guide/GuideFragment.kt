@@ -1,5 +1,3 @@
-//ViewModel에서 전달받은 데이터를 관찰하고, RecyclerView를 설정하여 데이터를 표시
-
 package com.example.tg.ui.guide
 
 import android.content.Intent
