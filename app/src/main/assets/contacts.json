@@ -4,104 +4,134 @@
     "phone": "010-1222-1341",
     "email": "eunwoo@gmail.com",
     "location": "서울 / SEOUL",
-    "image": "image1"
+    "image": "image1",
+    "description": "#Seoul #HistoricPalaces #Shopping #VibrantCity",
+    "rating": 10.0
   },
   {
     "name": "류정란",
     "phone": "010-8673-3210",
     "email": "shortegg@gmail.com",
     "location": "부산 / BUSAN",
-    "image": "image2"
+    "image": "image2",
+    "description": "#Busan #CoastalCity #Beaches #SeafoodMarkets",
+    "rating": 7.0
   },
   {
     "name": "박재범",
     "phone": "010-1223-9832",
     "email": "parkj@gmail.com",
     "location": "대전 / DAEJEON",
-    "image": "image3"
+    "image": "image3",
+    "description": "#Daejeon #ScienceCity #Museums #LocalCuisine",
+    "rating": 7.5
   },
   {
     "name": "김태리",
     "phone": "010-5678-1234",
     "email": "kimt@gmail.com",
     "location": "인천 / INCHEON",
-    "image": "image4"
+    "image": "image4",
+    "description": "#Incheon #GatewayToKorea #Chinatown #Islands",
+    "rating": 8.0
   },
   {
     "name": "이병헌",
     "phone": "010-9876-5432",
     "email": "leebh@gmail.com",
     "location": "제주 / JEJU",
-    "image": "image5"
+    "image": "image5",
+    "description": "#Jeju #NaturalWonders #Waterfalls #Volcano",
+    "rating": 3.0
   },
   {
     "name": "손석구",
     "phone": "010-3456-7890",
     "email": "sonsk@gmail.com",
     "location": "대전 / DAEJEON",
-    "image": "image6"
+    "image": "image6",
+    "description": "#Daejeon #Festivals #Parks #Culture",
+    "rating": 8.5
   },
   {
     "name": "전지현",
     "phone": "010-0802-0097",
     "email": "jhj@gmail.com",
     "location": "부산 / BUSAN",
-    "image": "image7"
+    "image": "image7",
+    "description": "#Busan #Nightlife #Skyscrapers #WarmLocals",
+    "rating": 3.5
   },
   {
     "name": "정우성",
     "phone": "010-0976-7298",
     "email": "jeong@gmail.com",
     "location": "서울 / SEOUL",
-    "image": "image8"
+    "image": "image8",
+    "description": "#Seoul #Tradition #Modernity #HanRiver",
+    "rating": 4.0
   },
   {
     "name": "이민호",
     "phone": "010-5578-7976",
     "email": "minolee@gmail.com",
     "location": "제주 / JEJU",
-    "image": "image9"
+    "image": "image9",
+    "description": "#Jeju #Forests #Caves #UniqueCulture",
+    "rating": 4.5
   },
   {
     "name": "박보검",
     "phone": "010-2883-4459",
     "email": "handsome@gmail.com",
     "location": "인천 / INCHEON",
-    "image": "image10"
+    "image": "image10",
+    "description": "#Incheon #UrbanLandscape #CoastalBeauty",
+    "rating": 9.0
   },
   {
     "name": "손예진",
     "phone": "010-3324-5666",
     "email": "queenyaejin@gmail.com",
     "location": "부산 / BUSAN",
-    "image": "image11"
+    "image": "image11",
+    "description": "#Busan #StunningBeaches #CulturalSites #FriendlyLocals",
+    "rating":5.0
   },
   {
     "name": "현빈",
     "phone": "010-2056-9900",
     "email": "wifelover@gmail.com",
     "location": "제주 / JEJU",
-    "image": "image12"
+    "image": "image12",
+    "description": "#Jeju #HallasanMountain #SereneBeaches",
+    "rating": 5.5
   },
   {
     "name": "김소현",
     "phone": "010-1163-1054",
     "email": "kimsh@gmail.com",
     "location": "대전 / DAEJEON",
-    "image": "image13"
+    "image": "image13",
+    "description": "#Daejeon #TechCity #Culture #Innovation",
+    "rating": 6.0
   },
   {
     "name": "공유",
     "phone": "010-5266-3025",
     "email": "share@gmail.com",
     "location": "서울 / SEOUL",
-    "image": "image14"
+    "image": "image14",
+    "description": "#Seoul #HistoricLandmarks #ModernAttractions",
+    "rating": 6.5
   },
   {
     "name": "김유정",
     "phone": "010-9258-7734",
     "email": "kimyj@gmail.com",
     "location": "인천 / INCHEON",
-    "image": "image15"
+    "image": "image15",
+    "description": "#Incheon #PortCity #BeautifulIslands",
+    "rating": 9.5
   }
 ]
