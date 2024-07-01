@@ -18,27 +18,31 @@ class ReviewsFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val reviewsViewModel =
-            ViewModelProvider(this).get(ReviewsModel::class.java)
 
         _binding = FragmentReviewsBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
         val viewPager = binding.viewPager
-        val tabLayout = binding.tabLayout
 
-        // ViewPager2 어댑터 설정
+
+        // ViewPager2 어댑터 설정 - 0번 인덱스(Guide Rankings)만 표시
         val adapter = ReviewsPagerAdapter(this)
         viewPager.adapter = adapter
 
-        // TabLayout과 ViewPager2를 연결
-        TabLayoutMediator(tabLayout, viewPager) { tab, position ->
-            tab.text = when (position) {
-                0 -> "Guide Rankings"
-                1 -> "Place Rankings"
-                else -> null
-            }
-        }.attach()
+//        val tabLayout = binding.tabLayout
+//
+//        // ViewPager2 어댑터 설정
+//        val adapter = ReviewsPagerAdapter(this)
+//        viewPager.adapter = adapter
+//
+//        // TabLayout과 ViewPager2를 연결
+//        TabLayoutMediator(tabLayout, viewPager) { tab, position ->
+//            tab.text = when (position) {
+//                0 -> "Guide Rankings"
+//                1 -> "Place Rankings"
+//                else -> null
+//            }
+//        }.attach()
 
         return root
     }

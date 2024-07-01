@@ -7,10 +7,11 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.tg.R
-import com.example.tg.ui.reviews.Guide
 
-class GuideRankingAdapter(private val guides: List<Guide>) :
+class GuideRankingAdapter(private var guides: List<Guide>) :
     RecyclerView.Adapter<GuideRankingAdapter.GuideViewHolder>() {
+
+    private var filteredGuides: List<Guide> = guides
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): GuideViewHolder {
         val view = LayoutInflater.from(parent.context)
@@ -19,14 +20,14 @@ class GuideRankingAdapter(private val guides: List<Guide>) :
     }
 
     override fun onBindViewHolder(holder: GuideViewHolder, position: Int) {
-        val guide = guides[position]
+        val guide = filteredGuides[position]
         holder.nameTextView.text = guide.name
         holder.descriptionTextView.text = guide.description
         setStarRating(holder.starContainer, guide.rating)
         setRankImage(holder.rankImageView, position + 1)
     }
 
-    override fun getItemCount(): Int = guides.size
+    override fun getItemCount(): Int = filteredGuides.size
 
     class GuideViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val rankImageView: ImageView = view.findViewById(R.id.rankImageView)
@@ -64,6 +65,11 @@ class GuideRankingAdapter(private val guides: List<Guide>) :
         }
         imageView.setImageResource(imageResId)
         imageView.visibility = View.VISIBLE  // 이미지가 있을 때만 보이도록 설정
+    }
+
+    fun updateList(newList: List<Guide>) {
+        filteredGuides = newList
+        notifyDataSetChanged()
     }
 }
 
