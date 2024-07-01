@@ -7,10 +7,11 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.tg.R
-import com.example.tg.ui.reviews.Guide
 
-class GuideRankingAdapter(private val guides: List<Guide>) :
+class GuideRankingAdapter(private var guides: List<Guide>) :
     RecyclerView.Adapter<GuideRankingAdapter.GuideViewHolder>() {
+
+    private var filteredGuides: List<Guide> = guides
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): GuideViewHolder {
         val view = LayoutInflater.from(parent.context)
@@ -19,13 +20,13 @@ class GuideRankingAdapter(private val guides: List<Guide>) :
     }
 
     override fun onBindViewHolder(holder: GuideViewHolder, position: Int) {
-        val guide = guides[position]
+        val guide = filteredGuides[position]
         holder.nameTextView.text = guide.name
         holder.descriptionTextView.text = guide.description
         setStarRating(holder.starContainer, guide.rating)
     }
 
-    override fun getItemCount(): Int = guides.size
+    override fun getItemCount(): Int = filteredGuides.size
 
     class GuideViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val nameTextView: TextView = view.findViewById(R.id.nameTextView)
@@ -35,7 +36,7 @@ class GuideRankingAdapter(private val guides: List<Guide>) :
 
     private fun setStarRating(starContainer: ViewGroup, rating: Double) {
         starContainer.removeAllViews()
-        val fullStars = (rating).toInt()
+        val fullStars = rating.toInt()
         val hasHalfStar = (rating % 1) >= 0.5
         val maxStars = 10
 
@@ -48,5 +49,10 @@ class GuideRankingAdapter(private val guides: List<Guide>) :
             }
             starContainer.addView(starImageView)
         }
+    }
+
+    fun updateList(newList: List<Guide>) {
+        filteredGuides = newList
+        notifyDataSetChanged()
     }
 }
