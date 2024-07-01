@@ -57,17 +57,10 @@ class LandscapeFragment : Fragment() {
         _binding = FragmentLandscapeBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val cities = listOf("Seoul", "New York", "Tokyo", "Paris", "London")
-        val cityImages = mapOf(
-            "Seoul" to listOf("Seoul1.jpeg", "Seoul2.jpeg", "Seoul3.jpeg", "Seoul4.jpeg"),
-            "New York" to listOf("NewYork1.jpeg", "NewYork2.jpeg", "NewYork3.jpeg", "NewYork4.jpeg"),
-            "Tokyo" to listOf("Tokyo1.jpeg", "Tokyo2.jpeg", "Tokyo3.jpeg", "Tokyo4.jpeg"),
-            "Paris" to listOf("Paris1.jpeg", "Paris2.jpeg", "Paris3.jpeg", "Paris4.jpeg"),
-            "London" to listOf("London1.jpeg", "London2.jpeg", "London3.jpeg", "London4.jpeg")
-        )
+        val cities = listOf("Seoul", "Busan", "Daejeon", "Incheon", "Jeju")
 
         // Initialize ViewPager for images with the first city's images
-        val imageAdapter = ImagePagerAdapter(this, cityImages[cities[0]] ?: emptyList())
+        val imageAdapter = ImagePagerAdapter(this, getImagesFromAssets(cities[0]))
         binding.imageViewPager.adapter = imageAdapter
         binding.imageViewPager.orientation = ViewPager2.ORIENTATION_VERTICAL
 
@@ -81,7 +74,7 @@ class LandscapeFragment : Fragment() {
             override fun onTabSelected(tab: TabLayout.Tab?) {
                 tab?.let {
                     val selectedCity = cities[it.position]
-                    val images = cityImages[selectedCity] ?: emptyList()
+                    val images = getImagesFromAssets(selectedCity)
                     binding.imageViewPager.adapter = ImagePagerAdapter(this@LandscapeFragment, images)
                 }
             }
@@ -250,6 +243,22 @@ class LandscapeFragment : Fragment() {
             }
             .setNegativeButton("Cancel", null)
             .show()
+    }
+
+    private fun getImagesFromAssets(city: String): List<String> {
+        val assetManager = requireContext().assets
+        val images = mutableListOf<String>()
+
+        try {
+            val files = assetManager.list(city) ?: arrayOf()
+            for (fileName in files) {
+                images.add("$city/$fileName")
+            }
+        } catch (e: IOException) {
+            e.printStackTrace()
+        }
+
+        return images
     }
 
     override fun onDestroyView() {

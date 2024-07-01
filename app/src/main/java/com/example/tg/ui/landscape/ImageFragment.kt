@@ -20,6 +20,10 @@ class ImageFragment : Fragment() {
         _binding = FragmentImageBinding.inflate(inflater, container, false)
         val imageUrl = arguments?.getString(ARG_IMAGE)
 
+        // 파일 이름에서 확장자를 제거한 후 설정
+        val fileName = imageUrl?.substringAfterLast('/')?.substringBeforeLast('.')
+        binding.imageTitle.text = fileName
+
         binding.imageView.load("file:///android_asset/$imageUrl") {
             crossfade(true)
             memoryCachePolicy(CachePolicy.ENABLED)
