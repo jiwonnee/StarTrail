@@ -3,6 +3,7 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="back">Back</string>
 
     <string-array name="cities">
         <item>Seoul</item>
@@ -17,5 +18,4 @@
         <item>Category2</item>
         <item>Category3</item>
     </string-array>
-    <!-- 각 도시의 카테고리 배열을 추가 -->
 </resources>

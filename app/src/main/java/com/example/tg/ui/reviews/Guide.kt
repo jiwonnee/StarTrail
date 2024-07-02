@@ -7,5 +7,6 @@ data class Guide(
     val phone: String,
     val email: String,
     val location: String,
+    val introduction: String,
     val imageName: String
 )

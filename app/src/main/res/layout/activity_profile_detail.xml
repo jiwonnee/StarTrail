@@ -9,6 +9,16 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+        <!-- 뒤로 가기 버튼 추가 -->
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/ic_back"
+            android:background="?attr/selectableItemBackground"/>
+
         <!--프로필 이미지-->
         <ImageView
             android:id="@+id/profileImage"
@@ -23,7 +33,7 @@
             android:id="@+id/text_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="24sp"
+            android:textSize="25sp"
             android:textStyle="bold"
             android:layout_marginBottom="16dp"/>
 
@@ -31,38 +41,57 @@
             android:id="@+id/text_location"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="18sp"
+            android:textSize="20sp"
             android:layout_marginBottom="4dp"/>
 
         <TextView
             android:id="@+id/text_phone"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="18sp"
-            android:layout_marginBottom="4dp"/>
+            android:textSize="19sp"
+            android:layout_marginBottom="4dp"
+            android:autoLink="phone"
+            android:clickable="true"
+            android:focusable="true"/>
 
         <TextView
             android:id="@+id/text_email"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="18sp"
+            android:textSize="19sp"
             android:layout_marginBottom="4dp"/>
 
-
-        <ImageView
-            android:id="@+id/instagramLogo"
-            android:layout_width="32dp"
-            android:layout_height="32dp"
+        <!-- 인스타그램 로고와 전화기 로고를 수평으로 배치하기 위한 LinearLayout -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
             android:layout_marginTop="16dp"
-            android:src="@drawable/instagram_logo" />
-ㅑ
+            android:layout_marginBottom="16dp">
+
+            <!-- 인스타그램 로고 -->
+            <ImageView
+                android:id="@+id/instagramLogo"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/instagram_logo" />
+
+            <!-- 전화기 로고 -->
+            <ImageView
+                android:id="@+id/phoneLogo"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/phone_logo" />
+        </LinearLayout>
+
         <TextView
             android:id="@+id/text_introduction"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="18sp"
-            android:layout_marginTop="16dp"/>
-
+            android:textSize="19sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"/>
 
     </LinearLayout>
 </ScrollView>

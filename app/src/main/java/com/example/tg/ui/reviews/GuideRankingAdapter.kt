@@ -7,6 +7,10 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.tg.R
+import android.content.Context
+import android.content.Intent
+import com.example.tg.ui.profile.ProfileDetailActivity
+import com.example.tg.databinding.ActivityProfileDetailBinding
 
 class GuideRankingAdapter(private var guides: List<Guide>) :
     RecyclerView.Adapter<GuideRankingAdapter.GuideViewHolder>() {

@@ -28,8 +28,8 @@
             <!--프로필 사진-->
             <ImageView
                 android:id="@+id/profile"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
                 android:src="@drawable/user_image"/>
 
             <!-- 이름 -->
@@ -37,9 +37,9 @@
                 android:id="@+id/text_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="17sp"
+                android:textSize="18sp"
                 android:textStyle="bold"
-                android:layout_marginStart="8dp" />
+                android:layout_marginStart="14dp" />
         </LinearLayout>
 
         <!-- 전화번호, 이름, 위치를 수직으로 배치 -->
@@ -64,7 +64,7 @@
                 android:id="@+id/text_phone"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="15sp"
+                android:textSize="16sp"
                 android:layout_marginTop="2dp" />
 
             <!-- 이메일 -->
@@ -72,7 +72,7 @@
                 android:id="@+id/text_email"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="15sp"
+                android:textSize="16sp"
                 android:layout_marginTop="2dp" />
         </LinearLayout>
 

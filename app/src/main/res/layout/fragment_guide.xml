@@ -22,7 +22,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:text="Tour Guide"
+        android:text="Tour Guide List"
         android:textColor="@color/white"
         android:textAlignment="viewStart"/>
 
@@ -33,6 +33,7 @@
         android:paddingStart="11dp"
         android:layout_marginTop="40dp"
         android:paddingEnd="20dp"
+        android:paddingBottom="10dp"
         android:background="@color/purple_700"
         android:textSize="18sp"
         android:textStyle="bold"

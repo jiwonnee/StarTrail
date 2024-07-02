@@ -39,7 +39,6 @@ class GuideFragment : Fragment() {
         guideViewModel.contacts.observe(viewLifecycleOwner) { contacts ->
             adapter.updateContacts(contacts)
         }
-
         return root
     }
 
