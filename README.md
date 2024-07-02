@@ -1,16 +1,14 @@
 ## Outline
 
 ---
-
 - StarTrail 은 외국인 교환학생을 위한 한국인 여행 가이드 앱으로, 대한민국의 여러 명소들을 사진으로 둘러보고 원하는 가이드에게 컨택하여 여행할 수 있도록 도와줍니다.
 - StarTrail 이란 별이 그리는 궤적을 의미하며, 다른 의미로는 연예인과 함께하는 여정과 추억을 상징합니다.
-
 ---
+
 
 ## Team
 
 ---
-
 [강건](https://www.notion.so/a9f5fe76226a458b976db96edcffcf20?pvs=21) 
 
 [geon314159 - Overview](https://github.com/geon314159)
@@ -18,17 +16,14 @@
 [신지원](https://www.notion.so/26ddcb3aab754914b7de5f6e740523dd?pvs=21) 
 
 [jiwonnee - Overview](https://github.com/jiwonnee)
-
 ---
+
 
 ## Tech Stack
-
 ---
-
 **Front-end :** Kotlin
 
 **IDE :** Android Studio
-
 ---
 
 ## Details
