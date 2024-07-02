@@ -23,19 +23,30 @@
         app:layout_constraintTop_toBottomOf="@id/tabLayout"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btnFavoriteFilter"
         app:layout_constraintHeight_percent="0.6"
-        android:layout_marginTop="60dp" />
+        android:layout_marginTop="0dp" />
 
-    <Button
-        android:id="@+id/btn_add_landscape"
+    <TextView
+        android:id="@+id/emptyFavoritesText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/imageViewPager"
+        android:text="Nothing in favorites"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/tabLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btnFavoriteFilter" />
+
+    <Button
+        android:id="@+id/btnFavoriteFilter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:text="Add Landscape"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="40dp"/>
-
+        android:text="Show Favorites"
+        android:layout_marginBottom="100dp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

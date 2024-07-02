@@ -1,13 +1,13 @@
 package com.example.tg.ui.profile
 
 import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
 import com.example.tg.databinding.ActivityProfileDetailBinding
 import com.example.tg.R
 import android.content.Intent
 import android.net.Uri
+import com.example.tg.MainActivity
 
-class ProfileDetailActivity : AppCompatActivity() {
+class ProfileDetailActivity : MainActivity() {
 
     private lateinit var binding: ActivityProfileDetailBinding
 
