@@ -1,12 +1,18 @@
 package com.example.tg.util
 
 import android.content.Context
+import android.graphics.ImageDecoder
 import android.util.Log
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import java.io.IOException
 
-data class ImageInfo(val fileName: String, val description: String)
+data class ImageInfo(
+    val fileName: String,
+    val description: String,
+    val latitude: Double,
+    val longitude: Double
+)
 
 object JsonUtil {
     private const val TAG = "JsonUtil"

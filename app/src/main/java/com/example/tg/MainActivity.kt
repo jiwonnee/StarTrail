@@ -9,7 +9,7 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.example.tg.databinding.ActivityMainBinding
 
-class MainActivity : AppCompatActivity() {
+open class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
 

@@ -4,12 +4,22 @@ import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import coil.load
+import com.example.tg.MainActivity
+import com.example.tg.R
 import com.example.tg.databinding.ActivityImageInfoBinding
 import com.example.tg.util.ImageInfo
 import com.example.tg.util.JsonUtil
+import com.google.android.gms.maps.CameraUpdateFactory
+import com.google.android.gms.maps.GoogleMap
+import com.google.android.gms.maps.OnMapReadyCallback
+import com.google.android.gms.maps.SupportMapFragment
+import com.google.android.gms.maps.model.LatLng
+import com.google.android.gms.maps.model.MarkerOptions
 
-class ImageInfoActivity : AppCompatActivity() {
+class ImageInfoActivity : MainActivity(), OnMapReadyCallback {
     private lateinit var binding: ActivityImageInfoBinding
+    private lateinit var mMap: GoogleMap
+    private var imageInfo: ImageInfo? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,7 +33,7 @@ class ImageInfoActivity : AppCompatActivity() {
 
         if (imageUrl == null || imageTitle == null) {
             Log.e(TAG, "Image URL or Title is null")
-            finish() // 종료 전 사용자에게 알림을 표시할 수도 있습니다.
+            finish()
             return
         }
 
@@ -36,18 +46,44 @@ class ImageInfoActivity : AppCompatActivity() {
             Log.d(TAG, "fileName: ${info.fileName}, imageTitle: $imageTitle")
         }
 
-        val imageInfo = imageInfoList.find { it.fileName.equals(imageTitle, ignoreCase = true) }
+        imageInfo = imageInfoList.find { it.fileName.equals(imageTitle, ignoreCase = true) }
         Log.d(TAG, "Found image info: $imageInfo")
 
         if (imageInfo == null) {
             Log.e(TAG, "No description found for image title: $imageTitle")
             binding.imageDescription.text = "No description available."
         } else {
-            binding.imageDescription.text = imageInfo.description
+            binding.imageDescription.text = imageInfo!!.description
         }
 
         binding.imageView.load("file:///android_asset/$imageUrl")
         binding.imageTitle.text = imageTitle
+
+        // SupportMapFragment 초기화 및 콜백 설정
+        try {
+            val mapFragment = supportFragmentManager
+                .findFragmentById(R.id.map) as SupportMapFragment
+            mapFragment.getMapAsync(this)
+        } catch (e: Exception) {
+            Log.e(TAG, "Error initializing map fragment: ${e.message}", e)
+        }
+    }
+
+    override fun onMapReady(googleMap: GoogleMap) {
+        Log.d(TAG, "Map is ready")
+        mMap = googleMap
+
+        try {
+            // 이미지 정보에 위치가 포함된 경우 지도에 마커 추가
+            imageInfo?.let {
+                val location = LatLng(it.latitude, it.longitude)
+                Log.d(TAG, "Setting marker at location: $location")
+                mMap.addMarker(MarkerOptions().position(location).title(it.fileName))
+                mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(location, 10f))
+            }
+        } catch (e: Exception) {
+            Log.e(TAG, "Error adding marker to map: ${e.message}", e)
+        }
     }
 
     companion object {

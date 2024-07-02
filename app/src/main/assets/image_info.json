@@ -1,102 +1,152 @@
 [
   {
     "fileName": "Banpo Hangang Park",
-    "description": "Banpo Hangang Park is a scenic riverside park in Seoul, known for its beautiful night views and the Banpo Bridge Rainbow Fountain,\nthe world's longest bridge fountain."
+    "description": "Banpo Hangang Park is a scenic riverside park in Seoul, known for its beautiful night views and the Banpo Bridge Rainbow Fountain,\nthe world's longest bridge fountain.",
+    "latitude": 37.5089,
+    "longitude": 126.9956
   },
   {
     "fileName": "Byeolmadang Library",
-    "description": "Byeolmadang Library is a stunning library located in Seoul's COEX Mall,\nfamous for its towering bookshelves and extensive collection of books and digital media."
+    "description": "Byeolmadang Library is a stunning library located in Seoul's COEX Mall,\nfamous for its towering bookshelves and extensive collection of books and digital media.",
+    "latitude": 37.5125,
+    "longitude": 127.0580
   },
   {
     "fileName": "Gwanghwamun Square",
-    "description": "Gwanghwamun Square is a historical and cultural plaza in the heart of Seoul,\nfeaturing statues of King Sejong and Admiral Yi Sun-sin, as well as beautiful fountains and gardens."
+    "description": "Gwanghwamun Square is a historical and cultural plaza in the heart of Seoul,\nfeaturing statues of King Sejong and Admiral Yi Sun-sin, as well as beautiful fountains and gardens.",
+    "latitude": 37.5725,
+    "longitude": 126.9769
   },
   {
     "fileName": "Gyeongbokgung",
-    "description": "Gyeongbokgung is a grand royal palace in Seoul, built in 1395 during the Joseon Dynasty.\nIt offers a glimpse into Korea's royal history with its majestic architecture and tranquil gardens."
+    "description": "Gyeongbokgung is a grand royal palace in Seoul, built in 1395 during the Joseon Dynasty.\nIt offers a glimpse into Korea's royal history with its majestic architecture and tranquil gardens.",
+    "latitude": 37.5796,
+    "longitude": 126.9770
   },
   {
     "fileName": "N Seoul Tower",
-    "description": "N Seoul Tower is an iconic landmark of Seoul, offering panoramic views of the city from its observation decks.\nIt is a popular spot for tourists and locals alike."
+    "description": "N Seoul Tower is an iconic landmark of Seoul, offering panoramic views of the city from its observation decks.\nIt is a popular spot for tourists and locals alike.",
+    "latitude": 37.5512,
+    "longitude": 126.9882
   },
   {
     "fileName": "Hallabong Orchard",
-    "description": "Hallabong Orchard is a picturesque citrus farm on Jeju Island, where visitors can pick and taste the famous Hallabong oranges,\nknown for their sweet and tangy flavor."
+    "description": "Hallabong Orchard is a picturesque citrus farm on Jeju Island, where visitors can pick and taste the famous Hallabong oranges,\nknown for their sweet and tangy flavor.",
+    "latitude": 33.4996,
+    "longitude": 126.5312
   },
   {
     "fileName": "Manjang Cave",
-    "description": "Manjang Cave is a fascinating lava tube on Jeju Island, formed over 200,000 years ago.\nIt is one of the longest lava tubes in the world, with impressive rock formations and unique geological features."
+    "description": "Manjang Cave is a fascinating lava tube on Jeju Island, formed over 200,000 years ago.\nIt is one of the longest lava tubes in the world, with impressive rock formations and unique geological features.",
+    "latitude": 33.5204,
+    "longitude": 126.8607
   },
   {
     "fileName": "Olle Trail",
-    "description": "Olle Trail is a network of scenic walking paths on Jeju Island, offering stunning views of the island's natural beauty,\nfrom coastal cliffs to lush forests and volcanic landscapes."
+    "description": "Olle Trail is a network of scenic walking paths on Jeju Island, offering stunning views of the island's natural beauty,\nfrom coastal cliffs to lush forests and volcanic landscapes.",
+    "latitude": 33.2532,
+    "longitude": 126.5067
   },
   {
     "fileName": "Sehwa Beach",
-    "description": "Sehwa Beach is a serene and beautiful beach on Jeju Island, known for its clear turquoise waters and soft white sand,\nperfect for a relaxing day by the sea."
+    "description": "Sehwa Beach is a serene and beautiful beach on Jeju Island, known for its clear turquoise waters and soft white sand,\nperfect for a relaxing day by the sea.",
+    "latitude": 33.5417,
+    "longitude": 126.7660
   },
   {
     "fileName": "Udo",
-    "description": "Udo is a small island off the coast of Jeju Island, famous for its scenic landscapes, beautiful beaches,\nand unique attractions like Udo's peanut ice cream."
+    "description": "Udo is a small island off the coast of Jeju Island, famous for its scenic landscapes, beautiful beaches,\nand unique attractions like Udo's peanut ice cream.",
+    "latitude": 33.5020,
+    "longitude": 126.9493
   },
   {
     "fileName": "Busan Fireworks Festival",
-    "description": "Busan Fireworks Festival is an annual event held in Busan, showcasing a spectacular display of fireworks over Gwangalli Beach,\nattracting visitors from all over the world."
+    "description": "Busan Fireworks Festival is an annual event held in Busan, showcasing a spectacular display of fireworks over Gwangalli Beach,\nattracting visitors from all over the world.",
+    "latitude": 35.1535,
+    "longitude": 129.1186
   },
   {
     "fileName": "Gamcheon Culture Village",
-    "description": "Gamcheon Culture Village is a vibrant and colorful village in Busan, known for its artistic murals,\nquirky sculptures, and maze-like alleys that offer a unique cultural experience."
+    "description": "Gamcheon Culture Village is a vibrant and colorful village in Busan, known for its artistic murals,\nquirky sculptures, and maze-like alleys that offer a unique cultural experience.",
+    "latitude": 35.0970,
+    "longitude": 129.0105
   },
   {
     "fileName": "Haeundae",
-    "description": "Haeundae is a famous beach in Busan, popular for its wide sandy shore, bustling nightlife,\nand numerous festivals and events throughout the year."
+    "description": "Haeundae is a famous beach in Busan, popular for its wide sandy shore, bustling nightlife,\nand numerous festivals and events throughout the year.",
+    "latitude": 35.1587,
+    "longitude": 129.1604
   },
   {
     "fileName": "International Market",
-    "description": "International Market, located in Busan, is a bustling traditional market offering a wide variety of goods,\nfrom fresh produce to clothing and souvenirs, reflecting the city's vibrant local culture."
+    "description": "International Market, located in Busan, is a bustling traditional market offering a wide variety of goods,\nfrom fresh produce to clothing and souvenirs, reflecting the city's vibrant local culture.",
+    "latitude": 35.0991,
+    "longitude": 129.0353
   },
   {
     "fileName": "Songdo Marine Cable Car",
-    "description": "Songdo Marine Cable Car offers a thrilling ride over the sea in Busan,\nproviding breathtaking views of the coastline and cityscape from above."
+    "description": "Songdo Marine Cable Car offers a thrilling ride over the sea in Busan,\nproviding breathtaking views of the coastline and cityscape from above.",
+    "latitude": 35.0712,
+    "longitude": 129.0308
   },
   {
     "fileName": "Chinatown",
-    "description": "Chinatown in Incheon is a cultural district that showcases Chinese culture and heritage,\nwith its ornate architecture, traditional shops, and delicious cuisine."
+    "description": "Chinatown in Incheon is a cultural district that showcases Chinese culture and heritage,\nwith its ornate architecture, traditional shops, and delicious cuisine.",
+    "latitude": 37.4753,
+    "longitude": 126.6165
   },
   {
     "fileName": "Gwangseongbo",
-    "description": "Gwangseongbo is a historical fortress in Incheon,\noffering insights into Korea's military history and providing scenic views of the surrounding area."
+    "description": "Gwangseongbo is a historical fortress in Incheon,\noffering insights into Korea's military history and providing scenic views of the surrounding area.",
+    "latitude": 37.4082,
+    "longitude": 126.6358
   },
   {
     "fileName": "Incheon Grand Park",
-    "description": "Incheon Grand Park is a large urban park in Incheon, featuring beautiful gardens,\nhiking trails, and recreational facilities for visitors of all ages."
+    "description": "Incheon Grand Park is a large urban park in Incheon, featuring beautiful gardens,\nhiking trails, and recreational facilities for visitors of all ages.",
+    "latitude": 37.4510,
+    "longitude": 126.5800
   },
   {
     "fileName": "Songdo Central Park",
-    "description": "Songdo Central Park is a modern urban park in Incheon's Songdo district,\ndesigned with a blend of natural and futuristic elements, including a man-made waterway and high-tech facilities."
+    "description": "Songdo Central Park is a modern urban park in Incheon's Songdo district,\ndesigned with a blend of natural and futuristic elements, including a man-made waterway and high-tech facilities.",
+    "latitude": 37.3941,
+    "longitude": 126.6346
   },
   {
     "fileName": "Wolmido",
-    "description": "Wolmido is a popular island in Incheon, known for its amusement parks, seaside promenade,\nand vibrant cultural attractions, making it a favorite destination for families and tourists."
+    "description": "Wolmido is a popular island in Incheon, known for its amusement parks, seaside promenade,\nand vibrant cultural attractions, making it a favorite destination for families and tourists.",
+    "latitude": 37.4752,
+    "longitude": 126.5960
   },
   {
     "fileName": "EXPO Bridge",
-    "description": "EXPO Bridge in Daejeon is a strikingly designed bridge that connects different parts of the EXPO Science Park,\nknown for its unique architectural features and beautiful night illumination."
+    "description": "EXPO Bridge in Daejeon is a strikingly designed bridge that connects different parts of the EXPO Science Park,\nknown for its unique architectural features and beautiful night illumination.",
+    "latitude": 36.3745,
+    "longitude": 127.3865
   },
   {
     "fileName": "EXPO Science Park",
-    "description": "EXPO Science Park in Daejeon is an educational and recreational park showcasing scientific exhibits,\ninteractive displays, and futuristic architecture, ideal for visitors of all ages."
+    "description": "EXPO Science Park in Daejeon is an educational and recreational park showcasing scientific exhibits,\ninteractive displays, and futuristic architecture, ideal for visitors of all ages.",
+    "latitude": 36.3744,
+    "longitude": 127.3850
   },
   {
     "fileName": "Museum of Art",
-    "description": "Museum of Art in Daejeon is a prominent cultural institution featuring contemporary art exhibitions,\ndiverse collections, and educational programs that foster an appreciation for the arts."
+    "description": "Museum of Art in Daejeon is a prominent cultural institution featuring contemporary art exhibitions,\ndiverse collections, and educational programs that foster an appreciation for the arts.",
+    "latitude": 36.3741,
+    "longitude": 127.3843
   },
   {
     "fileName": "O-World",
-    "description": "O-World in Daejeon is a popular theme park offering a variety of attractions, including rides, a zoo,\na flower garden, and seasonal events, making it a fun destination for families."
+    "description": "O-World in Daejeon is a popular theme park offering a variety of attractions, including rides, a zoo,\na flower garden, and seasonal events, making it a fun destination for families.",
+    "latitude": 36.3240,
+    "longitude": 127.3868
   },
   {
     "fileName": "Sungsimdang",
-    "description": "Sungsimdang is a renowned bakery in Daejeon, famous for its delicious pastries, bread,\nand traditional Korean baked goods that attract food lovers from all over the country."
+    "description": "Sungsimdang is a renowned bakery in Daejeon, famous for its delicious pastries, bread,\nand traditional Korean baked goods that attract food lovers from all over the country.",
+    "latitude": 36.3304,
+    "longitude": 127.4290
   }
 ]
