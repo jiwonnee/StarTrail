@@ -79,7 +79,7 @@ class ImageInfoActivity : MainActivity(), OnMapReadyCallback {
                 val location = LatLng(it.latitude, it.longitude)
                 Log.d(TAG, "Setting marker at location: $location")
                 mMap.addMarker(MarkerOptions().position(location).title(it.fileName))
-                mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(location, 10f))
+                mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(location, 15f))
             }
         } catch (e: Exception) {
             Log.e(TAG, "Error adding marker to map: ${e.message}", e)
