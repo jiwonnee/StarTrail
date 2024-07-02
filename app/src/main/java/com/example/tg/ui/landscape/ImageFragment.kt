@@ -62,9 +62,9 @@ class ImageFragment : Fragment() {
 
     private fun updateStarIcon() {
         if (isFavorite) {
-            binding.btnFavorite.setImageResource(R.drawable.ic_star)
+            binding.btnFavorite.setImageResource(R.drawable.ic_star2)
         } else {
-            binding.btnFavorite.setImageResource(R.drawable.ic_star_border)
+            binding.btnFavorite.setImageResource(R.drawable.ic_star_border2)
         }
     }
 

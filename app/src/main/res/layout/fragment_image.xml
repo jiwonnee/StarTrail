@@ -31,6 +31,6 @@
             android:layout_gravity="end|top"
             android:layout_margin="12dp"
             android:background="@android:color/transparent"
-            android:src="@drawable/ic_star_border"/>
+            android:src="@drawable/ic_star_border2"/>
     </FrameLayout>
 </LinearLayout>
