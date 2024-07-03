@@ -143,4 +143,4 @@
 
 ## Apk File
 
-- (파일 링크 추가)
+- [File Link](https://drive.google.com/file/d/1DGX9gU9td57DRgrui_yoVqf1mkSEYOOH/view?usp=drive_link)
