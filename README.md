@@ -1,6 +1,6 @@
 <div style="display: flex;>
     <div style="display: flex; gap: 10px;">
-        <img src="https://github.com/jiwonnee/StarTrail/assets/150645080/c2aa999d-527a-4e33-9580-c21b0cacdf5a" alt="Image 1" style="height: 500px; object-fit: cover;" align="center"; >
+        <img src="https://github.com/jiwonnee/StarTrail/assets/150645080/c2aa999d-527a-4e33-9580-c21b0cacdf5a" alt="Image 1" style="height: 100px; object-fit: cover;" align="center"; >
     </div>
 </div>
 
