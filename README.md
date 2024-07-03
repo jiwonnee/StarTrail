@@ -1,3 +1,9 @@
+<div style="display: flex;>
+    <div style="display: flex; gap: 10px;">
+        <img src="https://github.com/jiwonnee/StarTrail/assets/150645080/c2aa999d-527a-4e33-9580-c21b0cacdf5a" alt="Image 1" style="height: 500px; object-fit: cover;" align="center"; >
+    </div>
+</div>
+
 ## Outline
 
 - **StarTrail**: 별이 그리는 궤적을 의미하며, 연예인과 함께하는 여정과 추억을 상징합니다.
