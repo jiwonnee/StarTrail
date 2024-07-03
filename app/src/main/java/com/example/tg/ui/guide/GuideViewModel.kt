@@ -52,7 +52,6 @@ class GuideViewModel(application: Application) : AndroidViewModel(application) {
                 )
                 contactList.add(contact)
             }
-
             _contacts.postValue(contactList)
         }
     }

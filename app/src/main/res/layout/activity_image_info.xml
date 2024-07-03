@@ -56,7 +56,7 @@
                 android:textSize="16sp"
                 android:textColor="@color/black"
                 android:paddingTop="16dp"
-                android:lineSpacingExtra="8dp" /> <!-- 텍스트뷰 내부의 텍스트 사이 간격을 늘리기 위한 속성 추가 -->
+                android:lineSpacingExtra="8dp" />
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"

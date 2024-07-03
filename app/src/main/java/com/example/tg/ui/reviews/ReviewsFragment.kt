@@ -21,11 +21,7 @@ class ReviewsFragment : Fragment() {
 
         _binding = FragmentReviewsBinding.inflate(inflater, container, false)
         val root: View = binding.root
-
         val viewPager = binding.viewPager
-
-
-        // ViewPager2 어댑터 설정
         val adapter = ReviewsPagerAdapter(this)
         viewPager.adapter = adapter
         return root

@@ -30,17 +30,14 @@ class LandscapeFragment : Fragment() {
 
         sharedPreferences = requireContext().getSharedPreferences("favorites_prefs", 0)
 
-        // Initialize ViewPager for images with the first city's images
         val imageAdapter = ImagePagerAdapter(this, getImagesFromAssets(cities[0]), cities[0])
         binding.imageViewPager.adapter = imageAdapter
         binding.imageViewPager.orientation = ViewPager2.ORIENTATION_VERTICAL
 
-        // Set up TabLayout with cities
         cities.forEach { city ->
             binding.tabLayout.addTab(binding.tabLayout.newTab().setText(city))
         }
 
-        // Change images when a different city is selected
         binding.tabLayout.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {
             override fun onTabSelected(tab: TabLayout.Tab?) {
                 tab?.let {
@@ -63,7 +60,6 @@ class LandscapeFragment : Fragment() {
                 binding.btnFavoriteFilter.text = "Show Favorites"
             }
         }
-
         return root
     }
 
@@ -96,7 +92,6 @@ class LandscapeFragment : Fragment() {
         } catch (e: IOException) {
             e.printStackTrace()
         }
-
         return images
     }
 
