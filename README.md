@@ -26,8 +26,15 @@
 ## Details
 
 ## Intro
-- (사진 추가)
+실행 화면
+<div style="display: flex;>
+    <div style="display: flex; gap: 10px;">
+        <img src="https://github.com/jiwonnee/StarTrail/assets/69643543/5979e494-5c8c-422f-b57a-5e9163c5e0ce" alt="Image 1" style="height: 500px; object-fit: cover;" align="center"; >
+    </div>
+</div>
 
+</br>
+</br>
 
 </br>
 
@@ -41,32 +48,63 @@
 - 가이드들의 이름, 담당 관광 도시, 연락처 정보를 보여줍니다.
 - 가이드 프로필을 클릭하면 상세 정보 페이지로 이동합니다.
 
+<div style="display: flex;>
+    <div style="display: flex; gap: 10px;">
+        <img src="https://github.com/jiwonnee/StarTrail/assets/69643543/086207df-136f-46ad-a4e3-d0e0c398170b" alt="Image 1" style="height: 500px; object-fit: cover;" align="center"; >
+        <img src="https://github.com/jiwonnee/StarTrail/assets/69643543/62d81d3d-9c10-40c6-a85f-43def2be6137" alt="Image 2" style="height: 500px; object-fit: cover;" align="center"; >
+    </div>
+</div>
+
+</br>
+</br>
+
 **상세 정보 페이지**
 
 - 기본 정보 외에도 가이드의 사진 및 영문 자기 소개를 볼 수 있습니다.
 - 인스타그램과 전화 아이콘을 통해 바로 인스타그램 프로필로 이동하거나 전화를 걸 수 있습니다.
-  
+
+<div style="display: flex;>
+    <div style="display: flex; gap: 10px;">
+        <img src="https://github.com/jiwonnee/StarTrail/assets/69643543/30251169-84c3-4fe6-94d6-a581d35ebafc" alt="Image 1" style="height: 500px; object-fit: cover;" align="center"; >
+        <img src="https://github.com/jiwonnee/StarTrail/assets/69643543/0a39913b-da4d-47b1-8926-8b8ec47c9972" alt="Image 2" style="height: 500px; object-fit: cover;" align="center"; >
+    </div>
+</div>
+
+</br>
 </br>
 
 ## Tap 2: Landscape
 
-여러 여행지 명소들의 사진을 볼 수 있는 탭입니다.
-
-**도시 명소**
-
-- 서울, 부산, 대전, 인천, 제주 등 주요 도시 5곳의 명소 사진을 볼 수 있습니다.
-- 상단 탭을 전환하며 각 도시의 명소들을 확인할 수 있습니다.
+서울, 부산, 대전, 인천, 제주 등 주요 도시 5곳의 명소 사진을 볼 수 있는 탭
 
 **갤러리**
 
 - 상단 탭에서 보고 싶은 도시를 선택하고, 아래로 사진을 스크롤하며 감상할 수 있습니다.
 - 사진을 클릭하면 해당 명소의 설명과 함께 구글 맵에서 위치를 확인할 수 있습니다.
 
+<div style="display: flex;>
+    <div style="display: flex; gap: 10px;">
+        <img src="https://github.com/jiwonnee/StarTrail/assets/69643543/dd0d1929-2dc6-40ba-9bf6-eaa80efd81d7" alt="Image 1" style="height: 500px; object-fit: cover;" align="center"; >
+        <img src="https://github.com/jiwonnee/StarTrail/assets/69643543/55eaf482-9f75-4a77-85f7-f6c44f34e7ae" alt="Image 2" style="height: 500px; object-fit: cover;" align="center"; >
+    </div>
+</div>
+
+</br>
+</br>
+
 **즐겨찾기**
 
 - 사진 우측 상단의 버튼을 눌러 즐겨찾기에 추가할 수 있습니다. 선택된 항목은 하트로 표시됩니다.
 - 하단의 "SHOW FAVORITES" 버튼을 눌러 도시별 즐겨찾기 항목을 확인할 수 있습니다.
+
+<div style="display: flex;>
+    <div style="display: flex; gap: 10px;">
+        <img src="https://github.com/jiwonnee/StarTrail/assets/69643543/0851f38f-8fcd-4c6c-a712-4b83741f1c32" alt="Image 1" style="height: 500px; object-fit: cover;" align="center"; >
+        <img src="https://github.com/jiwonnee/StarTrail/assets/69643543/4a128c91-d11f-4e4f-91be-4976b86b2e37" alt="Image 2" style="height: 500px; object-fit: cover;" align="center"; >
+    </div>
+</div>
   
+</br>
 </br>
 
 ## Tap 3: Reviews
@@ -82,6 +120,14 @@
 
 - 가이드의 이름이나 관련 해시태그로 원하는 장소를 검색할 수 있습니다.
   
+<div style="display: flex;>
+    <div style="display: flex; gap: 10px;">
+        <img src="https://github.com/jiwonnee/StarTrail/assets/69643543/f9bccdbc-bf7e-44d8-8d8c-3a0484d43925" alt="Image 1" style="height: 500px; object-fit: cover;" align="center"; >
+        <img src="https://github.com/jiwonnee/StarTrail/assets/69643543/2385d9c3-57d6-4fa7-8428-6ec98ff62378" alt="Image 2" style="height: 500px; object-fit: cover;" align="center"; >
+    </div>
+</div>
+  
+</br>
 </br>
 
 ## Apk File
